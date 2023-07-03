@@ -8,35 +8,25 @@
   border: 5px solid black;
 }
 
-/* .card {
-  
+.intro {
+  padding: 20px;
   border: 1px dashed red;
-} */
-
-.card .card-text {
-  padding: 30px;
 }
 
-.card h2 {
-  padding: 0;
+.intro h2 {
   margin: 0;
-  /* margin-left: 20px; */
+  font-size: 32px;
 }
 
-.card p {
-  padding: 15px 0px;
-  margin: 0;
-}
-
-.techno-wrapper {
+.skill-list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.techno {
-  padding: 5px;
+.skill {
+  padding: 5px 10px;
   border-radius: 5px;
   margin: 5px;
   border: 1px solid gray;
