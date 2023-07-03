@@ -66,16 +66,20 @@ const Intro = () => {
 };
 
 const Skill = ({ data }) => {
-  const testedLevel =
-    data.level === "advanced"
-      ? "💪🏽"
-      : data.level === "intermediate"
-      ? "👍🏽"
-      : "🫣";
+  // const testedLevel =
+  //   data.level === "advanced"
+  //     ? "💪🏽"
+  //     : data.level === "intermediate"
+  //     ? "👍🏽"
+  //     : "🫣";
 
   return (
     <div className="skill" style={{ backgroundColor: data.color }}>
-      <span>{`${data.skill} ${testedLevel}`}</span>
+      {/* <span>{`${data.skill} ${testedLevel}`}</span>  */}
+      <span>{data.skill} </span>
+      <span>{data.level === "advanced" && "💪🏽"}</span>
+      <span>{data.level === "intermediate" && "👍🏽"}</span>
+      <span>{data.level === "beginner" && "🫣"}</span>
     </div>
   );
 };
